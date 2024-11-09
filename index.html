@@ -12,15 +12,29 @@
     <h2>Estudiante de universidad</h2>
     <p>Soy Josafath, tengo 22 años y estoy cursando la carrera de tecnologia superior en Desarrollo de software</p>
     <h1>Datos Personales</h1>
-    <table border="" >
+    <table border="">
         <tr>
-            <td>Nombre:</td>
-            <td>Josafath Conforme</td>
+            <td< /td>
+                <td>Nombre:</td>
+                <td>Josafath Conforme</td>
+
+                <!--ingreso de fecha-->
+                <td style="padding: 10px;"> Fecha de nacimiento:
+                <td> <input id="idedad" type="date">
+
+                </td>
+                </td>
         </tr>
         <tr>
             <td>Edad</td>
             <td>22 años</td>
+            <td>Cedula:
+            <td> <input id="idcedula" type="number">
+
+            </td>
+            </td>
         </tr>
+
         <tr>
             <td>Correo: </td>
             <td>josafathp26@outlook.es</td>
@@ -29,10 +43,29 @@
     <ul> Mis Hobbies
         <li>Futbol</li>
         <li>Jugar en la PC</li>
-      </ul>
-      <h1>Foto Significativa</h1>
-      <img src="Recursos/Significativa.jpeg" width="325" height="450" alt="">
+    </ul>
+    <h1>Foto Significativa</h1>
+    <img src="Recursos/Significativa.jpeg" width="325" height="450" alt="">
 
+    <h1>Calcular tiempo de Edad</h1>
+    <table border="">
+        <tr>
+            <td>
+                <h3>Usted ha vivido:</h3>
+            <td> <span id="spanedad"></span></td>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Su cedula es:</h3>
+            <td> <span id="spancedula"></span></td>
+            </td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="Obtenervalores()">Calcular</button></td>
+        </tr>
+    </table>
+    <script src="funciones.js"></script>
 </body>
 
 </html>
